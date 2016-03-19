@@ -1,6 +1,7 @@
 from DataStructure import Stack
 from DataStructure import Queue
 from DataStructure import BinaryTree
+from DataStructure import LinkList
 
 ss = Stack.Stack(10)
 ss.push(ss)
@@ -15,7 +16,7 @@ bb.enQueue(77)
 print(bb.outQueue())
 print(bb.outQueue())
 print(bb.isEmpty())
-print("------")
+print("--------")
 
 ll = BinaryTree.BinaryTreeNode(2, None, None)
 rr = BinaryTree.BinaryTreeNode(3, None, None)
@@ -24,3 +25,12 @@ tree = BinaryTree.BinaryTree(node)
 tree.preOrder(tree.data)
 print("------")
 tree.inOrder(tree.data)
+
+print("--------")
+node1 = LinkList.Node(7)
+node2 = LinkList.Node("hello")
+node3 = LinkList.Node(8899)
+lls = LinkList.LinkList(node1)
+lls.add(node2)
+lls.add(node3)
+lls.view()
