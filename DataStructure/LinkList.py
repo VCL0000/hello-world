@@ -10,11 +10,11 @@ class LinkList:
         self.head.next = None  # 指针
         self.tail = self.head  # 初始化的时候表尾和表头是重合的
 
-    def add(self, node):
+    def Insert(self, node):
         self.tail.next = node
         self.tail = self.tail.next
 
-    def view(self):
+    def Print(self):
         node = self.head
         linkstr = ''
         while node is not None:
