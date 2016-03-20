@@ -32,9 +32,3 @@ def quick_sort(arr, low, high):  # 注2
  注3
  将基准数据移动到low指针
 '''
-
-if __name__ == "__main__":
-    array = [8, 7, 6, 5, 9, 3, 1]
-    print(array)
-    quick_sort(array, 0, len(array)-1)
-    print(array)
