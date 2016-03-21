@@ -2,6 +2,8 @@ from DataStructure import Stack
 from DataStructure import Queue
 from DataStructure import BinaryTree
 from DataStructure import LinkList
+from DataStructure import QuickSort
+from DataStructure import SelectionSort
 
 ss = Stack.Stack(10)
 ss.push(ss)
@@ -34,3 +36,15 @@ lls = LinkList.LinkList(node1)
 lls.Insert(node2)
 lls.Insert(node3)
 lls.Print()
+print("--------")
+
+array = [8, 7, 6, 5, 9, 3, 1]
+print(array)
+QuickSort.quick_sort(array, 0, len(array) - 1)
+print(array)
+
+print("--------")
+arr = [4, 3, 1, 9, 5, 2]
+print(arr)
+SelectionSort.selection_sort(arr)
+print(arr)
