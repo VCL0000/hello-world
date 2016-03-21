@@ -4,6 +4,7 @@ from DataStructure import BinaryTree
 from DataStructure import LinkList
 from DataStructure import QuickSort
 from DataStructure import SelectionSort
+from DataStructure import BubbleSort
 
 ss = Stack.Stack(10)
 ss.push(ss)
@@ -47,4 +48,10 @@ print("--------")
 arr = [4, 3, 1, 9, 5, 2]
 print(arr)
 SelectionSort.selection_sort(arr)
+print(arr)
+print("--------")
+
+arr = [3, 5, 6, 8, 7, 9, 1]
+print(arr)
+BubbleSort.BubbleSort(arr)
 print(arr)
