@@ -5,6 +5,7 @@ from DataStructure import LinkList
 from DataStructure import QuickSort
 from DataStructure import SelectionSort
 from DataStructure import BubbleSort
+from DataStructure import BinarySearch
 
 ss = Stack.Stack(10)
 ss.push(ss)
@@ -55,3 +56,8 @@ arr = [3, 5, 6, 8, 7, 9, 1]
 print(arr)
 BubbleSort.BubbleSort(arr)
 print(arr)
+print("--------")
+
+arr = [1, 2, 3, 5, 7, 8]
+index = BinarySearch.BinarySearch(arr, 4)
+print(index)
