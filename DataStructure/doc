@@ -4,3 +4,4 @@ BinaryTree  二叉树
 QuickSort   快排
 SelectionSort   选择排序
 BubbleSort  冒泡排序
+BinarySearch    二分查找
